@@ -1,0 +1,10 @@
+.btn {
+  font-family: var(--app-font-quick);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 14px 19px;
+  background-color: rgb(var(--color-yellow));
+  color: rgb(var(--color-black));
+  border-radius: 13px;
+  border: none;
+}
