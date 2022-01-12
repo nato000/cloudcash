@@ -1,0 +1,5 @@
+@import "./utils/fonts.css";
+@import "./utils/variables.css";
+
+@import "./components/app/app.css";
+@import "./components/app/app-navbar.css";

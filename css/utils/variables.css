@@ -1,0 +1,13 @@
+:root {
+  --app-font-lato: "Lato";
+  --app-font-quick: "Quicksand";
+  --app-font-suprema: "Suprema";
+
+  --color-white: 255, 255, 255;
+  --color-gray: 199, 199, 199;
+  --color-blue-dark: 15, 66, 100;
+  --color-blue-light: 25, 123, 189;
+  --color-black: 64, 64, 64;
+  --color-yellow: 255, 193, 69;
+  --color-green: 67, 154, 134;
+}

@@ -1,0 +1,102 @@
+.app-navbar {
+  width: 250px;
+  border-right: 2px solid rgb(var(--color-gray), 0.3);
+  height: 100vh;
+  padding: 55px 40px 40px 40px;
+  box-shadow: 0px 0px 5px 0px rgb(var(--color-gray), 0.5);
+}
+
+.app-logo {
+  --cloud-width: 44px;
+  --cloud-height: 29px;
+  text-decoration: none;
+  line-height: var(--cloud-height);
+}
+
+.app-logo__image {
+  position: relative;
+}
+
+.app-logo-image__cloud {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: var(--cloud-width);
+  height: var(--cloud-height);
+  transform: translateY(-50%);
+}
+.app-logo-image__dollar {
+  --size: 17px;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  left: var(--cloud-width);
+  transform: translate(-100%, -50%);
+  transition: transform 0.4s ease-in-out 0.1s;
+}
+
+.logo__text {
+  font-family: var(--app-font-quick);
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(var(--color-blue-dark));
+  width: 100%;
+  padding-left: calc(var(--cloud-width) + 10px);
+}
+
+.app-logo:hover .app-logo-image__dollar {
+  transform: translate(-100%, -50%) rotate(-20deg);
+}
+
+.app-navbar__navigation {
+  margin: 80px 0 0 0;
+}
+
+.navigation__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-list__item {
+  margin-bottom: 10px;
+  background-color: rgb(var(--color-white));
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navigation-list__item:hover {
+  background-color: rgba(var(--color-blue-light), 0.1);
+}
+
+.navigation-list-item__link {
+  text-decoration: none;
+  color: rgb(var(--color-gray));
+  text-transform: capitalize;
+  font-family: var(--app-font-lato);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navigation-list__item:hover .navigation-list-item__link {
+  color: rgb(var(--color-blue-light));
+}
+
+.navigation-list-item-link__image {
+  --size: 30px;
+  width: var(--size);
+  height: var(--size);
+  margin-right: 17px;
+}
+
+.navigation-list-item-link__image path {
+  transition: stroke 0.3s ease-in-out;
+}
+
+.navigation-list__item:hover .navigation-list-item-link__image path {
+  stroke: rgb(var(--color-blue-light));
+}
