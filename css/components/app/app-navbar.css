@@ -1,6 +1,6 @@
 .app-navbar {
   --app-navbar-padding: 40px;
-  width: 250px;
+  width: var(--app-navbar-width);
   border-right: 2px solid rgb(var(--color-gray), 0.3);
   height: 100vh;
   padding: calc(var(--app-navbar-padding) + 5px) var(--app-navbar-padding) var(--app-navbar-padding);
@@ -45,6 +45,11 @@
   color: rgb(var(--color-blue-dark));
   width: 100%;
   padding-left: calc(var(--cloud-width) + 10px);
+  transition: 0.2s ease-in-out 0.05s;
+}
+
+.app-logo:hover {
+  text-shadow: 0 0 1px rgb(var(--color-blue-dark));
 }
 
 .app-logo:hover .app-logo-image__dollar {

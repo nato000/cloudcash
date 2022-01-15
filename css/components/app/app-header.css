@@ -1,0 +1,118 @@
+.app-header {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  width: calc(100vw - var(--app-navbar-width));
+}
+
+.app-header__title-wrapper {
+  margin-left: 45px;
+}
+
+.app-header__title {
+  font-family: var(--app-font-suprema);
+  font-weight: 600;
+  color: rgb(var(--color-black));
+  font-size: 44px;
+  margin: 3px 0;
+}
+
+.app-header__subtitle {
+  font-family: var(--app-font-suprema);
+  font-weight: 400;
+  color: rgb(var(--color-gray-light));
+  font-size: 16px;
+  margin: 0;
+}
+
+.app-header__account-actions-wrapper {
+  --size: 25px;
+  margin-right: 45px;
+  margin-left: auto;
+  display: flex;
+}
+
+.account-actions__message-btn,
+.account-actions__notification-btn {
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+.account-actions-message-btn__image,
+.account-actions-notification-btn__image {
+  width: var(--size);
+  height: var(--size);
+  transition: stroke 1s ease-in-out;
+}
+
+.account-actions__message-btn::after,
+.account-actions__notification-btn::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0px;
+  height: 1px;
+  border-radius: 10px;
+  display: block;
+  background: rgb(var(--color-gray-light));
+  transition: 0.3s ease-in-out;
+}
+
+.account-actions__message-btn:hover::after,
+.account-actions__notification-btn:hover::after {
+  width: 100%;
+}
+
+.account-actions__profile-link {
+  text-decoration: none;
+  --avatar-size: 35px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: calc(var(--avatar-size) + 10px);
+}
+
+.account-actions__profile-link:hover .account-actions-profile__avatar {
+  background-color: rgba(var(--color-yellow), 0.8);
+}
+
+.account-actions-profile__avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  background-color: rgb(var(--color-yellow));
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translatey(-50%);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.account-actions-profile__name {
+  font-family: var(--app-font-suprema);
+  font-weight: 600;
+  color: rgb(var(--color-black));
+}
+
+.account-actions-profile__account-type {
+  font-family: var(--app-font-suprema);
+  font-weight: 400;
+  color: rgb(var(--color-gray-light));
+}
+
+.account-actions-profile__account-type::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  border-radius: 10px;
+  display: block;
+  background: rgb(var(--color-gray-light));
+  transition: 0.3s ease-in-out;
+}
+
+.account-actions__profile-link:hover .account-actions-profile__account-type::after {
+  width: 100%;
+}
