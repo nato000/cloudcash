@@ -142,3 +142,42 @@
   font-size: 15px;
   text-transform: capitalize;
 }
+
+.card-balance-item__checkbox-label {
+  position: relative;
+  margin-bottom: 5px;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgba(var(--color-gray-light), 0.6);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#card-balance-item__checkbox {
+  position: fixed;
+  transform: scale(0);
+}
+
+.card-balance-item__checkbox-label::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(var(--color-gray-light));
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+#card-balance-item__checkbox:checked + .card-balance-item__checkbox-label {
+  background-color: rgba(var(--color-blue-light), 0.5);
+}
+
+#card-balance-item__checkbox:checked + .card-balance-item__checkbox-label::after {
+  transform: translateX(calc(100% + 4px));
+  right: -1px;
+  background-color: rgb(var(--color-blue-light));
+}
