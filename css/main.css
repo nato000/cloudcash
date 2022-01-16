@@ -6,3 +6,7 @@
 @import "./components/app/app.css";
 @import "./components/app/app-navbar.css";
 @import "./components/app/app-header.css";
+@import "./components/app/app-content.css";
+@import "./components/cards/general-cards-style.css";
+@import "./components/cards/card.css";
+@import "./components/cards/cloudcash-card.css";
