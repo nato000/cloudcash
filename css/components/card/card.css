@@ -2,7 +2,7 @@
   font-family: var(--app-font-suprema);
   font-weight: 600;
   font-size: 20px;
-  margin: 0;
+  margin: 0 0 15px 0;
   color: rgb(var(--color-black));
 }
 
@@ -13,6 +13,7 @@
 .cloud-card-content__card-prewiew {
   --creditcard-width: 320px;
   --creditcard-height: 205px;
+  --size: 25px;
   max-width: var(--creditcard-width);
   padding: 0 0 0 10px;
   position: relative;
@@ -23,51 +24,61 @@
   content: "";
   position: absolute;
   top: 0;
-  right: -30px;
+  right: -40px;
   height: 200px;
   width: 1px;
   background-color: rgba(var(--color-gray-light), 0.7);
 }
 
 .card-prewiev-wrapper {
+  --quantity: 2;
+
   position: relative;
-  --size: 25px;
+  overflow: hidden;
+  width: calc(var(--creditcard-width) + 10px);
+  padding: 0 20px 0 0;
 }
 
-.card-prewiev__left,
-.card-prewiev__right {
+.card-prewiev {
+  display: flex;
+  width: calc(var(--creditcard-width) * var(--quantity) + 25px);
+  padding: 0 0 10px 0;
+}
+
+.card-prewiev__btn-left,
+.card-prewiev__btn-right {
   position: absolute;
   background-color: transparent;
   border: none;
 }
 
-.card-prewiev__left .card-prewiev-left__img,
-.card-prewiev__right .card-prewiev-right__img {
+.card-prewiev__btn-left .card-prewiev-left__img,
+.card-prewiev__btn-right .card-prewiev-right__img {
   width: var(--size);
   height: var(--size);
   stroke: rgb(var(--color-blue-light));
   transition: 0.3s ease-in-out;
 }
 
-.card-prewiev__left path,
-.card-prewiev__right path {
+.card-prewiev__btn-left path,
+.card-prewiev__btn-right path {
   transition: 0.3s ease-in-out;
 }
 
-.card-prewiev__left:hover path,
-.card-prewiev__right:hover path {
+.card-prewiev__btn-left:hover path,
+.card-prewiev__btn-right:hover path {
   stroke: rgb(var(--color-blue-dark));
 }
 
-.card-prewiev__left {
-  left: 0;
-  top: 50%;
+.card-prewiev__btn-left {
+  left: 10px;
+  top: calc(0px + var(--creditcard-height) * 0.5);
   transform: translate(-100%, -50%);
 }
 
-.card-prewiev__right {
-  right: 0;
-  top: 50%;
+.card-prewiev__btn-right {
+  right: 0px;
+  top: calc(0px + var(--creditcard-height) * 0.5);
   transform: translate(100%, -50%);
 }
 
@@ -77,6 +88,7 @@
 }
 
 .weekly-limit__progress-bar {
+  margin-top: 20px;
   height: 30px;
 }
 
