@@ -1,3 +1,3 @@
-# cloudcash
+# creditcard
 
 HTML / CSS exam project

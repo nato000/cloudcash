@@ -6,5 +6,9 @@
 @import "./components/app/app.css";
 @import "./components/app/app-navbar.css";
 @import "./components/app/app-header.css";
+@import "./components/app/app-content.css";
 
+@import "./components/card/general-cards-style.css";
+@import "./components/card/card.css";
+@import "./components/card/creditcard.css";
 @import "./components/cards/transaction-card.css";
