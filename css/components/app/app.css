@@ -10,3 +10,17 @@ body {
   display: flex;
   height: 100vh;
 }
+
+::-webkit-scrollbar {
+  height: 2px;
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-blue-dark));
+  border-radius: 5px;
+}
