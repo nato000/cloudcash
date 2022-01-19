@@ -12,9 +12,10 @@
 
 .app-content__column-main {
   width: 50%;
-  padding: 0 45px;
+  padding: 0 20px 0 45px;
 }
 
 .app-content__column-secondary {
   width: 50%;
+  padding: 0 45px 0 20px;
 }

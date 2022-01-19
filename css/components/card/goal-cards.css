@@ -1,0 +1,9 @@
+.goal-cards-section {
+  margin: 30px 0 0 0;
+}
+
+.goal-cards-section-headline__add-btn {
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 15px;
+}

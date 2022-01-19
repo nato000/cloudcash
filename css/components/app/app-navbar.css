@@ -132,6 +132,7 @@
   width: 100%;
   position: relative;
   padding: 14px calc(var(--size) + 18px) 14px 15px;
+  border-radius: 13px;
 }
 
 .premium-upgrade-btn__arrow {
