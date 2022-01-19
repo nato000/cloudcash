@@ -2,8 +2,61 @@
   margin: 30px 0 0 0;
 }
 
+.goal-cards-section__headline {
+  display: flex;
+  align-items: center;
+}
+
+.goal-cards-section-headline__title {
+  margin: 0 10px 0 0;
+}
+
 .goal-cards-section-headline__add-btn {
   border-radius: 50%;
   font-weight: 900;
   font-size: 15px;
+}
+
+.goal-cards-section__cards-wrapper {
+}
+
+.goal-card {
+  --card-width: 160px;
+  --img-size: 35px;
+  max-width: var(--card-width);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.goal-card:hover {
+  box-shadow: 0 0 5px 2px rgb(var(--color-black));
+}
+
+.goal-card__money-quantity {
+  font-family: var(--app-font-lato);
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(var(--color-gray-light-2));
+}
+
+.goal-card__date {
+  font-family: var(--app-font-suprema);
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(var(--color-gray-light));
+}
+
+.goal-card__img {
+  width: var(--img-size);
+  height: var(--img-size);
+  margin-top: var(--img-size);
+}
+
+.goal-card__link {
+  text-decoration: none;
+  color: rgb(var(--color-black));
+  font-family: var(--app-font-suprema);
+  font-weight: 400;
+  font-size: 20px;
 }

@@ -5,6 +5,7 @@
   background-color: rgb(var(--color-yellow));
   color: rgb(var(--color-black));
   border: none;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .btn:hover {

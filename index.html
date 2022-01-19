@@ -444,13 +444,41 @@
           <section class="app-content__column-secondary">
             <div class="goal-cards-section">
               <div class="goal-cards-section__headline">
-                <h3 class="card__title">Goal</h3>
+                <h3 class="card__title goal-cards-section-headline__title">Goal</h3>
                 <button class="btn goal-cards-section-headline__add-btn">+</button>
+              </div>
+              <div class="goal-cards-section__cards-wrapper">
+                <div class="card goal-card">
+                  <span class="goal-card__money-quantity">$550</span>
+                  <span class="goal-card__date">12/20/20</span>
+                  <svg class="goal-card__img" fill="none" viewBox="0 0 36 36">
+                    <path
+                      d="M17.6 5.43c-.7 0-.93.46-1.4.93L2.67 28.53c-.24.23-.24.7-.24.93 0 1.17.94 1.63 1.64 1.63h27.06c.94 0 1.64-.46 1.64-1.63 0-.47 0-.47-.24-.93L19.23 6.36c-.46-.47-.93-.93-1.63-.93Zm0 3.5 7.7 12.83h-1.87l-3.5-3.5-2.33 3.5-2.33-3.5-3.5 3.5h-2.1L17.6 8.93Z"
+                      fill="url(#gradient)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="gradient"
+                        x1="17.6"
+                        y1="5.43"
+                        x2="17.6"
+                        y2="31.09"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#7CB4F9" />
+                        <stop offset="1" stop-color="#6DA2E4" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  <a href="#" class="goal-card__link">Holidays</a>
+                </div>
               </div>
             </div>
           </section>
         </div>
       </main>
     </div>
+    <script src="./js/card-link.js"></script>
   </body>
 </html>
