@@ -37,7 +37,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 40px;
   box-shadow: 0 0 20px 30px rgb(var(--color-white));
   z-index: 10;
 }
