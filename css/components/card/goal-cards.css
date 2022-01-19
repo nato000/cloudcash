@@ -17,16 +17,41 @@
   font-size: 15px;
 }
 
+.goal-cards-section__cards {
+  --card-width: 160px;
+  --card-height: 185px;
+  position: relative;
+  height: calc(var(--card-height) + (var(--app-card-margin-y) * 2));
+}
+
 .goal-cards-section__cards-wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  overflow: auto hidden;
+  padding: 0 10px;
+}
+
+.goal-cards-section__cards::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0 20px 30px rgb(var(--color-white));
+  z-index: 10;
 }
 
 .goal-card {
-  --card-width: 160px;
   --img-size: 35px;
+  min-width: calc(var(--card-width) - 10px);
   max-width: var(--card-width);
+  height: var(--card-height);
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s ease-in-out;
+  margin-right: 30px;
+  background-color: rgb(var(--color-white));
 }
 
 .goal-card:hover {

@@ -1,7 +1,7 @@
 .card {
   width: 100%;
-  margin: 30px 0;
+  margin: var(--app-card-margin-y) 0;
   padding: 20px 25px;
   border-radius: 30px;
-  box-shadow: 0px 10px 20px 0 rgb(var(--color-gray));
+  box-shadow: 0px 10px 20px 0 rgba(var(--color-gray), 0.6);
 }
