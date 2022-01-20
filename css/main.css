@@ -2,6 +2,7 @@
 @import "./utils/variables.css";
 
 @import "./components/btn/btn.css";
+@import "./components/btn/loan-btn.css";
 
 @import "./components/app/app.css";
 @import "./components/app/app-navbar.css";
@@ -12,3 +13,6 @@
 @import "./components/card/card.css";
 @import "./components/card/creditcard.css";
 @import "./components/card/transaction-card.css";
+@import "./components/card/goal-cards.css";
+@import "./components/section/outcome-section.css";
+@import "./components/section/new-transaction-section.css";

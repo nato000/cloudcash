@@ -70,7 +70,7 @@
   margin-bottom: 10px;
   background-color: rgb(var(--color-white));
   border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .navigation-list__item:hover {
@@ -86,7 +86,7 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.1s ease-in-out;
 }
 
 .navigation-list__item:hover .navigation-list-item__link {
@@ -101,7 +101,7 @@
 }
 
 .navigation-list-item-link__image path {
-  transition: stroke 0.3s ease-in-out;
+  transition: stroke 0.1s ease-in-out;
 }
 .navigation-list__item:hover .navigation-list-item-link__image path {
   stroke: rgb(var(--color-blue-light));
@@ -132,6 +132,7 @@
   width: 100%;
   position: relative;
   padding: 14px calc(var(--size) + 18px) 14px 15px;
+  border-radius: 13px;
 }
 
 .premium-upgrade-btn__arrow {
@@ -146,4 +147,14 @@
 
 .premium-upgrade__btn:hover .premium-upgrade-btn__arrow {
   transform: translate(-100%, -50%);
+}
+
+@media (max-width: 850px) {
+  :root {
+    --app-navbar-width: 200px;
+  }
+  .app-navbar {
+    --app-navbar-padding: 20px;
+    padding: calc(var(--app-navbar-padding) + 25px) var(--app-navbar-padding) var(--app-navbar-padding);
+  }
 }

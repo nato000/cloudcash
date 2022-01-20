@@ -1,11 +1,3 @@
-.card__title {
-  font-family: var(--app-font-suprema);
-  font-weight: 600;
-  font-size: 20px;
-  margin: 0 0 15px 0;
-  color: rgb(var(--color-black));
-}
-
 .cloud-card__content {
   display: flex;
 }
@@ -200,4 +192,29 @@
   transform: translateX(calc(100% + 4px));
   right: -1px;
   background-color: rgb(var(--color-blue-light));
+}
+
+@media (max-width: 750px) {
+  .cloud-card-content__card-prewiew {
+    --creditcard-width: 290px;
+    --creditcard-height: 190px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cloud-card-content__card-prewiew {
+    margin-right: 30px;
+  }
+
+  .cloud-card-content__card-prewiew::after {
+    right: -30px;
+  }
+
+  .cloud-card-content__card-balance {
+    justify-content: flex-end;
+  }
+
+  .card-balance-item__value {
+    font-size: 20px;
+  }
 }

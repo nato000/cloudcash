@@ -1,0 +1,27 @@
+.loan-btn {
+  --btn-width: 160px;
+  --btn-height: 185px;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  background-color: rgb(var(--color-red));
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.loan-btn__img {
+  position: absolute;
+  top: 5px;
+  left: -15px;
+}
+
+.loan-btn__text {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  right: 20%;
+  color: rgb(var(--color-white));
+  font-size: 20px;
+  text-align: start;
+}

@@ -5,9 +5,12 @@
 
   --app-navbar-width: 250px;
 
+  --app-card-margin-y: 30px;
+
   --color-white: 255, 255, 255;
   --color-gray: 199, 199, 199;
   --color-gray-light: 174, 174, 174;
+  --color-gray-light-2: 105, 105, 105;
   --color-blue-dark: 15, 66, 100;
   --color-blue-light: 25, 123, 189;
   --color-black: 64, 64, 64;
