@@ -148,3 +148,13 @@
 .premium-upgrade__btn:hover .premium-upgrade-btn__arrow {
   transform: translate(-100%, -50%);
 }
+
+@media (max-width: 850px) {
+  :root {
+    --app-navbar-width: 200px;
+  }
+  .app-navbar {
+    --app-navbar-padding: 20px;
+    padding: calc(var(--app-navbar-padding) + 25px) var(--app-navbar-padding) var(--app-navbar-padding);
+  }
+}

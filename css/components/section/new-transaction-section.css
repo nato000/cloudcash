@@ -10,6 +10,9 @@
 .contacts-wrapper {
   display: flex;
   align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 5px 0;
 }
 
 .contact-item {
