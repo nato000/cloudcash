@@ -1,5 +1,7 @@
 .app-navbar {
   --app-navbar-padding: 40px;
+  display: flex;
+  flex-direction: column;
   width: var(--app-navbar-width);
   border-right: 2px solid rgb(var(--color-gray), 0.3);
   height: 100vh;
@@ -57,6 +59,7 @@
 }
 
 .app-navbar__navigation {
+  flex: 1 0 auto;
   margin: 80px 0 0 0;
 }
 
@@ -108,11 +111,7 @@
 }
 
 .navbar__premium {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-  bottom: calc(0px + var(--app-navbar-padding));
-  width: calc(100% - var(--app-navbar-padding) * 2);
+  flex: 0 0 auto;
 }
 
 .premium__img {
