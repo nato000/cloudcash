@@ -9,10 +9,10 @@
 }
 
 .app-logo {
-  --cloud-width: 44px;
-  --cloud-height: 29px;
+  --app-logo-width: 44px;
+  --app-logo-height: 29px;
   text-decoration: none;
-  line-height: var(--cloud-height);
+  line-height: var(--app-logo-height);
 }
 
 .app-logo__image {
@@ -23,8 +23,8 @@
   position: absolute;
   top: 50%;
   left: 0;
-  width: var(--cloud-width);
-  height: var(--cloud-height);
+  width: var(--app-logo-width);
+  height: var(--app-logo-height);
   transform: translateY(-50%);
 }
 .app-logo-image__dollar {
@@ -33,7 +33,7 @@
   width: var(--size);
   height: var(--size);
   top: 0;
-  left: var(--cloud-width);
+  left: var(--app-logo-width);
   transform: translate(-100%, -50%);
   transition: transform 0.4s ease-in-out 0.1s;
 }
@@ -44,7 +44,7 @@
   font-size: 17px;
   color: rgb(var(--color-blue-dark));
   width: 100%;
-  padding-left: calc(var(--cloud-width) + 10px);
+  padding-left: calc(var(--app-logo-width) + 10px);
   transition: 0.2s ease-in-out 0.05s;
 }
 
@@ -107,7 +107,7 @@
   stroke: rgb(var(--color-blue-light));
 }
 
-.navbar__premium-upgrade {
+.navbar__premium {
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
@@ -115,28 +115,28 @@
   width: calc(100% - var(--app-navbar-padding) * 2);
 }
 
-.premium-upgrade__img {
+.premium__img {
   display: block;
   margin: 0 auto;
 }
 
-.premium-upgrade__description {
+.premium__description {
   font-family: var(--app-font-suprema);
   font-weight: 400;
   font-size: 14px;
   text-align: center;
 }
 
-.premium-upgrade__btn {
-  --size: 11px;
+.premium__btn {
+  --arrow-size: 11px;
   width: 100%;
   position: relative;
-  padding: 14px calc(var(--size) + 18px) 14px 15px;
+  padding: 14px calc(var(--arrow-size) + 18px) 14px 15px;
   border-radius: 13px;
 }
 
-.premium-upgrade-btn__arrow {
-  width: var(--size);
+.premium-btn__arrow {
+  width: var(--arrow-size);
   height: var(--size);
   position: absolute;
   right: 0;
@@ -145,7 +145,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.premium-upgrade__btn:hover .premium-upgrade-btn__arrow {
+.premium__btn:hover .premium-btn__arrow {
   transform: translate(-100%, -50%);
 }
 
