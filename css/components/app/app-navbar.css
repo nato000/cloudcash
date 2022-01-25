@@ -148,6 +148,12 @@
   transform: translate(-100%, -50%);
 }
 
+@media (max-width: 720px) {
+  .app-navbar {
+    margin-left: calc(var(--app-navbar-width) * -1);
+  }
+}
+
 @media (max-width: 850px) {
   :root {
     --app-navbar-width: 200px;

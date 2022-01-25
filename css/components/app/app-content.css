@@ -37,3 +37,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 720px) {
+  .app-content {
+    width: 100vw;
+  }
+}
