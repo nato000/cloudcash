@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
 }
 
 .app-content {
@@ -30,16 +31,9 @@
 @media (max-width: 1500px) {
   .app-content {
     flex-direction: column;
-    width: calc(100vw - var(--app-navbar-width));
   }
   .app-content__column-main,
   .app-content__column-secondary {
     width: 100%;
-  }
-}
-
-@media (max-width: 720px) {
-  .app-content {
-    width: 100vw;
   }
 }
