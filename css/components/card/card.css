@@ -81,7 +81,7 @@
 
 .weekly-limit__progress-bar {
   margin-top: 20px;
-  height: 30px;
+  min-height: 20px;
 }
 
 .weekly-limit__description {

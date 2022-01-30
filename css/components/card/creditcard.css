@@ -52,23 +52,22 @@
 }
 
 .creditcard-card__bottom-info {
-  display: flex;
-  flex-direction: column;
   margin-right: 45px;
 }
 
-.bottom-info-title,
-.bottom-info-value {
+.creditcard-card-bottom-info__title,
+.creditcard-card-bottom-info__value {
   font-family: var(--app-font-lato);
   font-weight: 500;
   color: #fff;
+  margin: 0;
 }
 
-.bottom-info-title {
+.creditcard-card-bottom-info__title {
   font-size: 10px;
 }
 
-.bottom-info-value {
+.creditcard-card-bottom-info__value {
   font-size: 14px;
 }
 
