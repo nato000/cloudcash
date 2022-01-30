@@ -3,10 +3,10 @@
 }
 
 .cloud-card-content__card-prewiew {
-  --creditcard-width: 320px;
-  --creditcard-height: 205px;
+  --width: 320px;
+  --height: 205px;
   --size: 25px;
-  max-width: var(--creditcard-width);
+  max-width: var(--width);
   padding: 0 0 0 10px;
   position: relative;
   margin-right: 40px;
@@ -27,13 +27,13 @@
 
   position: relative;
   overflow: hidden;
-  width: calc(var(--creditcard-width) + 10px);
+  width: var(--width);
   padding: 0 20px 0 0;
 }
 
 .card-prewiev {
   display: flex;
-  width: calc(var(--creditcard-width) * var(--quantity) + 25px);
+  width: calc(var(--width) * var(--quantity) + 25px);
   padding: 0 0 10px 0;
 }
 
@@ -64,13 +64,13 @@
 
 .card-prewiev__btn-left {
   left: 10px;
-  top: calc(0px + var(--creditcard-height) * 0.5);
+  top: calc(0px + var(--height) * 0.5);
   transform: translate(-100%, -50%);
 }
 
 .card-prewiev__btn-right {
   right: 0px;
-  top: calc(0px + var(--creditcard-height) * 0.5);
+  top: calc(0px + var(--height) * 0.5);
   transform: translate(100%, -50%);
 }
 
@@ -196,8 +196,8 @@
 
 @media (max-width: 750px) {
   .cloud-card-content__card-prewiew {
-    --creditcard-width: 290px;
-    --creditcard-height: 190px;
+    --width: 290px;
+    --height: 190px;
   }
 }
 
