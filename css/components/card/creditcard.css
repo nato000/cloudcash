@@ -1,12 +1,10 @@
 .creditcard-card {
+  width: 100%;
   max-width: var(--creditcard-width);
   margin: 0px 25px 0px 5px;
   min-height: var(--creditcard-height);
-  background-image: linear-gradient(
-    180deg,
-    rgb(var(--color-blue-light)) 0%,
-    rgba(var(--color-blue-light), 0.8) 100%
-  );
+  background: url("../../../img/creditcard-background.png") no-repeat bottom right,
+    linear-gradient(180deg, rgb(var(--color-blue-light)) 0%, rgba(var(--color-blue-light), 0.8) 100%);
   box-shadow: 0 2px 5px 0 rgb(124, 124, 124);
   padding: 20px;
   border-radius: 25px;
