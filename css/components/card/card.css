@@ -43,7 +43,6 @@
   background-color: transparent;
   border: none;
   top: calc(var(--height) * 0.5);
-  transform: translate(-100%, -50%);
 }
 
 .card-prewiev__btn-left .card-prewiev-left__img,
@@ -66,10 +65,12 @@
 
 .card-prewiev__btn-left {
   left: 10px;
+  transform: translate(-100%, -50%);
 }
 
 .card-prewiev__btn-right {
   right: 0px;
+  transform: translate(100%, -50%);
 }
 
 .weekly-limit__progress-bar,
@@ -187,8 +188,8 @@
 }
 
 #card__checkbox:checked + .card-balance-item__checkbox-label::after {
-  transform: translateX(calc(100% + 4px));
-  right: -1px;
+  left: 100%;
+  transform: translateX(-100%);
   background-color: rgb(var(--color-blue-light));
 }
 
