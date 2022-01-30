@@ -1,13 +1,11 @@
 .loan-btn {
-  --btn-width: 160px;
-  --btn-height: 185px;
-  width: var(--btn-width);
-  height: var(--btn-height);
+  max-width: 100%;
+  width: 100%;
+  height: 185px;
   background-color: rgb(var(--color-red));
   position: relative;
   border-radius: 25px;
   overflow: hidden;
-  margin-left: 20px;
 }
 
 .loan-btn__img {
