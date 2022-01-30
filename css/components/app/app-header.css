@@ -2,7 +2,6 @@
   margin-top: 32px;
   display: flex;
   align-items: center;
-  width: calc(100vw - var(--app-navbar-width));
   padding-bottom: 20px;
   box-shadow: 20px 13px 20px 20px white;
   z-index: 10;
@@ -35,23 +34,27 @@
   display: flex;
 }
 
-.account-actions__message-btn,
-.account-actions__notification-btn {
+.app-header-actions__btn {
   background-color: transparent;
   border: none;
   margin-right: 10px;
   position: relative;
 }
 
-.account-actions-message-btn__image,
-.account-actions-notification-btn__image {
+.app-header-actions__btn--burger {
+  display: none;
+}
+.app-header-actions__btn--burger svg {
+  fill: rgb(var(--color-gray-light));
+}
+
+.app-header-actions-btn__img {
   width: var(--size);
   height: var(--size);
   transition: stroke 1s ease-in-out;
 }
 
-.account-actions__message-btn::after,
-.account-actions__notification-btn::after {
+.app-header-actions__btn::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -64,12 +67,11 @@
   transition: 0.3s ease-in-out;
 }
 
-.account-actions__message-btn:hover::after,
-.account-actions__notification-btn:hover::after {
+.app-header-actions__btn:hover::after {
   width: 100%;
 }
 
-.account-actions__profile-link {
+.app-header-actions__link {
   text-decoration: none;
   --avatar-size: 35px;
   display: flex;
@@ -78,11 +80,11 @@
   padding-left: calc(var(--avatar-size) + 10px);
 }
 
-.account-actions__profile-link:hover .account-actions-profile__avatar {
+.app-header-actions__link:hover .app-header-actions-link__avatar {
   background-color: rgba(var(--color-yellow), 0.8);
 }
 
-.account-actions-profile__avatar {
+.app-header-actions-link__avatar {
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
@@ -94,19 +96,19 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.account-actions-profile__name {
+.app-header-actions-link__name {
   font-family: var(--app-font-suprema);
   font-weight: 600;
   color: rgb(var(--color-black));
 }
 
-.account-actions-profile__account-type {
+.app-header-actions-link__account-type {
   font-family: var(--app-font-suprema);
   font-weight: 400;
   color: rgb(var(--color-gray-light));
 }
 
-.account-actions-profile__account-type::after {
+.app-header-actions-link__account-type::after {
   content: "";
   width: 0px;
   height: 1px;
@@ -116,7 +118,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.account-actions__profile-link:hover .account-actions-profile__account-type::after {
+.app-header-actions__link:hover .app-header-actions-link__account-type::after {
   width: 100%;
 }
 
@@ -135,5 +137,50 @@
 
   .app-header__account-actions-wrapper {
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 870px) {
+  .app-header__subtitle {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .app-header {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  .app-header__title-wrapper {
+    margin: 0 0 10px 0;
+  }
+
+  .app-header__title {
+    font-size: 30px;
+  }
+
+  .app-header__account-actions-wrapper {
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .app-header-actions__btn--burger {
+    display: inline-block;
+  }
+
+  .app-header-actions__link {
+    margin-left: auto;
+  }
+
+  .app-header-actions-link__avatar {
+    --avatar-size: 30px;
+  }
+
+  .app-header-actions-link__name,
+  .app-header-actions-link__account-type {
+    font-size: 15px;
   }
 }
