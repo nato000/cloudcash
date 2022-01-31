@@ -1,5 +1,6 @@
 .creditcard-card {
   width: 100%;
+  min-width: calc(var(--width) - 10px);
   max-width: var(--width);
   margin: 0px 25px 0px 5px;
   min-height: var(--height);
