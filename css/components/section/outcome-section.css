@@ -62,17 +62,17 @@
 }
 
 .statistics-item-progress-body__item--orange {
-  --progres-status: 52%;
+  --progres: 52%;
   background-color: rgb(var(--color-orange));
 }
 
 .statistics-item-progress-body__item--green {
-  --progres-status: 21%;
+  --progres: 21%;
   background-color: rgb(var(--color-green));
 }
 
 .statistics-item-progress-body__item--blue {
-  --progres-status: 74%;
+  --progres: 74%;
   background-color: rgb(var(--color-blue-light));
 }
 
