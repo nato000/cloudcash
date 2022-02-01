@@ -22,7 +22,6 @@
 }
 
 .card-prewiev-wrapper {
-  --quantity: 2;
   position: relative;
   overflow: hidden;
   width: var(--width);
