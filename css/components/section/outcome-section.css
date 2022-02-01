@@ -45,9 +45,35 @@
   display: flex;
 }
 
-.statistics-item-progress__bar {
+.statistics-item-progress-body__item,
+.statistics-item-progress__body {
+  border-radius: 50px;
+  height: 15px;
+}
+
+.statistics-item-progress__body {
   width: 100%;
   margin: 0 15px;
+  background-color: rgb(var(--color-gray), 0.3);
+}
+
+.statistics-item-progress-body__item {
+  width: var(--progres-status);
+}
+
+.statistics-item-progress-body__item--orange {
+  --progres-status: 52%;
+  background-color: rgb(var(--color-orange));
+}
+
+.statistics-item-progress-body__item--green {
+  --progres-status: 21%;
+  background-color: rgb(var(--color-green));
+}
+
+.statistics-item-progress-body__item--blue {
+  --progres-status: 74%;
+  background-color: rgb(var(--color-blue-light));
 }
 
 .statistics-item-progress__number {
