@@ -2,13 +2,9 @@
   margin-top: 32px;
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  padding: 0 35px 10px;
   box-shadow: 20px 13px 20px 20px white;
   z-index: 10;
-}
-
-.app-header__title-wrapper {
-  margin-left: 45px;
 }
 
 .app-header__title {
@@ -29,7 +25,6 @@
 
 .app-header__account-actions-wrapper {
   --size: 25px;
-  margin-right: 45px;
   margin-left: auto;
   display: flex;
 }
@@ -75,9 +70,7 @@
   text-decoration: none;
   --avatar-size: 35px;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  padding-left: calc(var(--avatar-size) + 10px);
+  align-items: center;
 }
 
 .app-header-actions__link:hover .app-header-actions-link__avatar {
@@ -85,15 +78,17 @@
 }
 
 .app-header-actions-link__avatar {
-  width: var(--avatar-size);
+  min-width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
   background-color: rgb(var(--color-yellow));
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translatey(-50%);
   transition: background-color 0.3s ease-in-out;
+}
+
+.app-header-actions-link-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 .app-header-actions-link__name {
