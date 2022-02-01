@@ -8,6 +8,7 @@
 
 .transaction-card-table__row {
   display: flex;
+  align-items: center;
   width: 100%;
   border-bottom: 1px solid rgba(var(--color-gray-light), 0.2);
   padding: 10px 0;
@@ -19,16 +20,6 @@
 
 .transaction-card-table__row-header .transaction-card-table-row__reciever {
   padding: 0;
-}
-
-.transaction-card-table__row-header .transaction-card-table-row__reciever,
-.transaction-card-table__row-header .transaction-card-table-row__type,
-.transaction-card-table__row-header .transaction-card-table-row__date,
-.transaction-card-table__row-header .transaction-card-table-row__amount {
-  font-family: var(--app-font-suprema);
-  font-weight: 400;
-  font-size: 14px;
-  color: rgb(var(--color-gray-light));
 }
 
 .transaction-card-table-row__reciever,
@@ -44,20 +35,16 @@
 }
 
 .transaction-card-table-row__reciever {
+  display: flex;
+  align-items: center;
   width: 40%;
-
-  position: relative;
-  padding-left: calc(var(--icon-size) + 5px);
   color: rgb(var(--color-black));
 }
 
 .transaction-card-table-row-reciever__icon {
-  position: absolute;
   width: var(--icon-size);
   height: var(--icon-size);
-  left: 0;
-  top: 50%;
-  transform: translatey(-50%);
+  margin: 0 10px 0 0;
 }
 
 .transaction-card-table-row__type {
@@ -75,4 +62,13 @@
   font-size: 14px;
   color: rgb(var(--color-black));
   text-align: end;
+}
+
+.transaction-card-table-row__reciever-header,
+.transaction-card-table-row__type-header,
+.transaction-card-table-row__date-header,
+.transaction-card-table-row__amount-header {
+  font-weight: 400;
+  color: rgb(var(--color-gray-light));
+  padding: 0;
 }
