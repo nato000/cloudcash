@@ -1,12 +1,11 @@
 .creditcard-card {
-  max-width: var(--creditcard-width);
+  width: 100%;
+  min-width: calc(var(--width) - 10px);
+  max-width: var(--width);
   margin: 0px 25px 0px 5px;
-  min-height: var(--creditcard-height);
-  background-image: linear-gradient(
-    180deg,
-    rgb(var(--color-blue-light)) 0%,
-    rgba(var(--color-blue-light), 0.8) 100%
-  );
+  min-height: var(--height);
+  background: url("../../../img/creditcard-background.png") no-repeat bottom right,
+    linear-gradient(180deg, rgb(var(--color-blue-light)) 0%, rgba(var(--color-blue-light), 0.8) 100%);
   box-shadow: 0 2px 5px 0 rgb(124, 124, 124);
   padding: 20px;
   border-radius: 25px;
@@ -37,7 +36,6 @@
 }
 
 .creditcard-card__number {
-  width: 100%;
   margin-top: 30px;
 }
 
@@ -55,23 +53,22 @@
 }
 
 .creditcard-card__bottom-info {
-  display: flex;
-  flex-direction: column;
   margin-right: 45px;
 }
 
-.bottom-info-title,
-.bottom-info-value {
+.creditcard-card-bottom-info__title,
+.creditcard-card-bottom-info__value {
   font-family: var(--app-font-lato);
   font-weight: 500;
   color: #fff;
+  margin: 0;
 }
 
-.bottom-info-title {
+.creditcard-card-bottom-info__title {
   font-size: 10px;
 }
 
-.bottom-info-value {
+.creditcard-card-bottom-info__value {
   font-size: 14px;
 }
 
