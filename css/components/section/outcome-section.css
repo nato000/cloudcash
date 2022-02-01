@@ -16,7 +16,9 @@
   width: var(--icon-size);
   height: var(--icon-size);
   border-radius: 5px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .statistics-item__icon--orange {
@@ -33,10 +35,6 @@
   --size: 20px;
   width: var(--size);
   height: var(--size);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .statistics-item-wrapper {
