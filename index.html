@@ -179,10 +179,7 @@
             </button>
             <button class="app-header-actions__btn app-header-actions__btn--messages">
               <svg class="app-header-actions-btn__img" fill="none" viewBox="0 0 24 24">
-                <path
-                  d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Z"
-                  fill="#E3E3E3"
-                />
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2Z" fill="#E3E3E3" />
                 <path
                   d="m22 6-10 7L2 6"
                   stroke="#fff"
@@ -351,11 +348,19 @@
               <div class="card transaction-card">
                 <h3 class="card__title">Transaction history</h3>
                 <div class="transction-card__table">
-                  <div class="transaction-card-table__row transaction-card-table__row-header">
-                    <span class="transaction-card-table-row__reciever">Reciever</span>
-                    <span class="transaction-card-table-row__type">Type</span>
-                    <span class="transaction-card-table-row__date">Date</span>
-                    <span class="transaction-card-table-row__amount">Amount</span>
+                  <div class="transaction-card-table__row">
+                    <span class="transaction-card-table-row__reciever transaction-card-table-row__reciever-header">
+                      Reciever
+                    </span>
+                    <span class="transaction-card-table-row__type transaction-card-table-row__type-header">
+                      Type
+                    </span>
+                    <span class="transaction-card-table-row__date transaction-card-table-row__date-header">
+                      Date
+                    </span>
+                    <span class="transaction-card-table-row__amount transaction-card-table-row__amount-header">
+                      Amount
+                    </span>
                   </div>
                   <div class="transaction-card-table__row">
                     <span class="transaction-card-table-row__reciever">
@@ -368,7 +373,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      tesco market
+                      <span class="transaction-card-table-row-reciver__text">tesco market</span>
                     </span>
                     <span class="transaction-card-table-row__type">shoping</span>
                     <span class="transaction-card-table-row__date">13 dec 2020</span>
@@ -385,7 +390,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      electroMen market
+                      <span class="transaction-card-table-row-reciver__text">electroMen market</span>
                     </span>
                     <span class="transaction-card-table-row__type">shoping</span>
                     <span class="transaction-card-table-row__date">14 dec 2020</span>
@@ -403,7 +408,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      fiorgio restaurant
+                      <span class="transaction-card-table-row-reciver__text">fiorgio restaurant</span>
                     </span>
                     <span class="transaction-card-table-row__type">food</span>
                     <span class="transaction-card-table-row__date">07 dec 2020</span>
@@ -421,7 +426,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      john mathew kayne
+                      <span class="transaction-card-table-row-reciver__text">john mathew kayne</span>
                     </span>
                     <span class="transaction-card-table-row__type">sport</span>
                     <span class="transaction-card-table-row__date">06 dec 2020</span>
@@ -439,7 +444,7 @@
                           stroke-linejoin="round"
                         />
                       </svg>
-                      ann marlin
+                      <span class="transaction-card-table-row-reciver__text">ann marlin</span>
                     </span>
                     <span class="transaction-card-table-row__type">shoping</span>
                     <span class="transaction-card-table-row__date">31 nov 2020</span>
@@ -760,7 +765,6 @@
 
                 <div class="transaction-btn-wrapper">
                   <button class="btn loan-btn">
-                    <img src="./img/loan-btn-background.png" alt="clouds and dollars" class="loan-btn__img" />
                     <span class="loan-btn__text">Get great loan</span>
                   </button>
                 </div>
