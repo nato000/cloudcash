@@ -25,7 +25,6 @@
 }
 
 .goal-cards-section__cards-wrapper {
-  position: absolute;
   display: flex;
   width: 100%;
   overflow: auto hidden;
@@ -46,7 +45,7 @@
   --img-size: 35px;
   min-width: calc(var(--card-width) - 10px);
   max-width: var(--card-width);
-  height: var(--card-height);
+  min-height: var(--card-height);
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.2s ease-in-out;
