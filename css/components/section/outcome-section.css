@@ -16,7 +16,9 @@
   width: var(--icon-size);
   height: var(--icon-size);
   border-radius: 5px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .statistics-item__icon--orange {
@@ -33,10 +35,6 @@
   --size: 20px;
   width: var(--size);
   height: var(--size);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .statistics-item-wrapper {
@@ -47,9 +45,35 @@
   display: flex;
 }
 
-.statistics-item-progress__bar {
+.statistics-item-progress-body__item,
+.statistics-item-progress__body {
+  border-radius: 50px;
+  height: 15px;
+}
+
+.statistics-item-progress__body {
   width: 100%;
   margin: 0 15px;
+  background-color: rgb(var(--color-gray), 0.3);
+}
+
+.statistics-item-progress-body__item {
+  width: var(--progres-status);
+}
+
+.statistics-item-progress-body__item--orange {
+  --progres: 52%;
+  background-color: rgb(var(--color-orange));
+}
+
+.statistics-item-progress-body__item--green {
+  --progres: 21%;
+  background-color: rgb(var(--color-green));
+}
+
+.statistics-item-progress-body__item--blue {
+  --progres: 74%;
+  background-color: rgb(var(--color-blue-light));
 }
 
 .statistics-item-progress__number {
