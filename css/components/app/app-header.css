@@ -118,8 +118,8 @@
 }
 
 @media (max-width: 1050px) {
-  .app-header__title-wrapper {
-    margin-left: 20px;
+  .app-header {
+    padding: 0 25px;
   }
 
   .app-header__title {
@@ -129,13 +129,17 @@
   .app-header__subtitle {
     font-size: 15px;
   }
-
-  .app-header__account-actions-wrapper {
-    margin-right: 20px;
-  }
 }
 
 @media (max-width: 870px) {
+  .app-header {
+    padding: 0 15px;
+  }
+
+  .app-header__title {
+    font-size: 32px;
+  }
+
   .app-header__subtitle {
     display: none;
   }
@@ -151,12 +155,8 @@
     border-bottom: 2px solid rgba(var(--color-gray-light), 0.3);
   }
 
-  .app-header__title-wrapper {
-    margin: 0 0 10px 0;
-  }
-
   .app-header__title {
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .app-header__account-actions-wrapper {
