@@ -4,6 +4,8 @@
 @import "./components/btn/btn.css";
 @import "./components/btn/loan-btn.css";
 
+@import "./components/page/content-markup.css";
+
 @import "./components/app/app.css";
 @import "./components/app/app-navbar.css";
 @import "./components/app/app-header.css";
