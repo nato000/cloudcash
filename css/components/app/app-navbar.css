@@ -11,24 +11,6 @@
   position: relative;
 }
 
-.logo__text {
-  font-family: var(--app-font-quick);
-  font-weight: 700;
-  font-size: 17px;
-  color: rgb(var(--color-blue-dark));
-  width: 100%;
-  padding-left: calc(var(--app-logo-width) + 10px);
-  transition: 0.2s ease-in-out 0.05s;
-}
-
-.app-logo:hover {
-  text-shadow: 0 0 1px rgb(var(--color-blue-dark));
-}
-
-.app-logo:hover .app-logo-image__dollar {
-  transform: translate(-100%, -50%) rotate(-20deg);
-}
-
 .app-navbar__navigation {
   flex: 1 0 auto;
   margin: 80px 0 0 0;
