@@ -16,18 +16,13 @@
   margin: 80px 0 0 0;
 }
 
-.navigation__list {
+.app-navbar-navigation__list {
   margin: 0;
   list-style: none;
   padding: 0;
 }
 
-.navigation-list__item {
-  background-color: rgb(var(--color-white));
-  transition: background-color 0.1s ease-in-out;
-}
-
-.navigation-list-item__link {
+.app-navbar-navigation-list__link {
   text-decoration: none;
   color: rgb(var(--color-gray));
   text-transform: capitalize;
@@ -37,25 +32,26 @@
   align-items: center;
   padding: 10px 5px;
   border-radius: 5px;
-  transition: color 0.1s ease-in-out;
+  background-color: rgb(var(--color-white));
+  transition: 0.1s ease-in-out;
 }
 
-.navigation-list-item__link:hover {
+.app-navbar-navigation-list__link:hover {
   background-color: rgba(var(--color-blue-light), 0.1);
   color: rgb(var(--color-blue-light));
 }
 
-.navigation-list-item-link__image {
+.app-navbar-navigation-list-link__image {
   --size: 30px;
   width: var(--size);
   height: var(--size);
   margin-right: 17px;
 }
 
-.navigation-list-item-link__image path {
+.app-navbar-navigation-list-link__image path {
   transition: stroke 0.1s ease-in-out;
 }
-.navigation-list-item__link:hover .navigation-list-item-link__image path {
+.app-navbar-navigation-list__link:hover .app-navbar-navigation-list-link__image path {
   stroke: rgb(var(--color-blue-light));
 }
 
@@ -91,7 +87,7 @@
 
 .app-navbar-premium-btn__arrow {
   width: var(--arrow-size);
-  height: var(--size);
+  height: var(--arrow-size);
 }
 
 .app-navbar-premium__btn:hover .premium-btn__arrow {
