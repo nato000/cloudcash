@@ -6,6 +6,7 @@
 
 @import "./components/app/app.css";
 @import "./components/app/app-navbar.css";
+@import "./components/app/app-logo.css";
 @import "./components/app/app-header.css";
 @import "./components/app/app-content.css";
 
