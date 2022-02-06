@@ -1,0 +1,47 @@
+.app-logo {
+  --app-logo-width: 44px;
+  --app-logo-height: 29px;
+  text-decoration: none;
+  line-height: var(--app-logo-height);
+}
+
+.app-logo__image {
+  position: relative;
+}
+
+.app-logo-image__cloud {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: var(--app-logo-width);
+  height: var(--app-logo-height);
+  transform: translateY(-50%);
+}
+.app-logo-image__dollar {
+  --size: 17px;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  left: var(--app-logo-width);
+  transform: translate(-100%, -50%);
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+
+.app-logo__text {
+  font-family: var(--app-font-quick);
+  font-weight: 700;
+  font-size: 17px;
+  color: rgb(var(--color-blue-dark));
+  width: 100%;
+  padding-left: calc(var(--app-logo-width) + 10px);
+  transition: 0.2s ease-in-out 0.05s;
+}
+
+.app-logo:hover {
+  text-shadow: 0 0 1px rgb(var(--color-blue-dark));
+}
+
+.app-logo:hover .app-logo-image__dollar {
+  transform: translate(-100%, -50%) rotate(-20deg);
+}
