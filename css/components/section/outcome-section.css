@@ -1,17 +1,17 @@
-.outcome-statistics-section {
+.outcome-section {
   margin-top: 50px;
 }
 
-.outcome-statistics-section-headline__title {
+.outcome-section__title {
   margin: 0 0 20px 0;
 }
 
-.statistics-item {
+.outcome-section-content__item {
   display: flex;
   margin-bottom: 25px;
 }
 
-.statistics-item__icon {
+.outcome-section-content-item__icon {
   --icon-size: 44px;
   width: var(--icon-size);
   height: var(--icon-size);
@@ -21,69 +21,69 @@
   justify-content: center;
 }
 
-.statistics-item__icon--orange {
+.outcome-section-content-item__icon--orange {
   background-color: rgb(255, 234, 218);
 }
-.statistics-item__icon--green {
+.outcome-section-content-item__icon--green {
   background-color: rgb(221, 249, 228);
 }
-.statistics-item__icon--blue {
+.outcome-section-content-item__icon--blue {
   background-color: rgb(228, 240, 255);
 }
 
-.statistics-item-icon__image {
+.outcome-section-content-item-icon__image {
   --size: 20px;
   width: var(--size);
   height: var(--size);
 }
 
-.statistics-item-wrapper {
+.outcome-section-content__item-wrapper {
   width: 100%;
 }
 
-.statistics-item__progress {
+.outcome-section-content-item__progress {
   display: flex;
 }
 
-.statistics-item-progress-body__item,
-.statistics-item-progress__body {
+.outcome-section-content-item-progress__body,
+.outcome-section-content-item-progress-body__item {
   border-radius: 50px;
   height: 15px;
 }
 
-.statistics-item-progress__body {
+.outcome-section-content-item-progress__body {
   width: 100%;
   margin: 0 15px;
   background-color: rgb(var(--color-gray), 0.3);
 }
 
-.statistics-item-progress-body__item {
+.outcome-section-content-item-progress-body__item {
   width: var(--progres-status);
 }
 
-.statistics-item-progress-body__item--orange {
+.outcome-section-content-item-progress-body__item--orange {
   --progres: 52%;
   background-color: rgb(var(--color-orange));
 }
 
-.statistics-item-progress-body__item--green {
+.outcome-section-content-item-progress-body__item--green {
   --progres: 21%;
   background-color: rgb(var(--color-green));
 }
 
-.statistics-item-progress-body__item--blue {
+.outcome-section-content-item-progress-body__item--blue {
   --progres: 74%;
   background-color: rgb(var(--color-blue-light));
 }
 
-.statistics-item-progress__number {
+.outcome-section-content-item-progress__number {
   font-family: var(--app-font-lato);
   font-weight: 600;
   font-size: 24;
   color: rgb(var(--color-black));
 }
 
-.statistics-item__title {
+.outcome-section-content-item__title {
   font-family: var(--app-font-suprema);
   font-weight: 400;
   font-size: 14px;
