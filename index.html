@@ -234,10 +234,10 @@
             <section class="content__column">
               <div class="card cloud-card">
                 <h3 class="card__title">Cards</h3>
-                <div class="cloud-card__content">
-                  <div class="cloud-card-content__card-prewiew">
-                    <div class="card-prewiev-wrapper">
-                      <div class="card-prewiev">
+                <div class="cards__content">
+                  <div class="cards-content__card">
+                    <div class="cards-container-wrapper">
+                      <div class="cards-container">
                         <div class="card creditcard-card">
                           <h3 class="creditcard-card__title">creditcard</h3>
                           <h4 class="creditcard-card__subtitle">premium account</h4>
@@ -259,11 +259,6 @@
                           </div>
                         </div>
                         <div class="card creditcard-card">
-                          <img
-                            src="./img/creditcard-background.png"
-                            alt="cloud"
-                            class="creditcard-card__background-image"
-                          />
                           <h3 class="creditcard-card__title">creditcard</h3>
                           <h4 class="creditcard-card__subtitle">premium account</h4>
                           <div class="creditcard-card__number">
@@ -274,31 +269,31 @@
                           </div>
                           <div class="creditcard-card__bottom-info-wrapper">
                             <div class="creditcard-card__bottom-info">
-                              <span class="bottom-info-title">Card holder</span>
-                              <span class="bottom-info-value">Mike Smith</span>
+                              <p class="creditcard-card-bottom-info__title">Card holder</p>
+                              <p class="creditcard-card-bottom-info__value">Mike Smith</p>
                             </div>
                             <div class="creditcard-card__bottom-info">
-                              <span class="bottom-info-title">Expire date</span>
-                              <span class="bottom-info-value">06/21</span>
+                              <p class="creditcard-card-bottom-info__title">Expire date</p>
+                              <p class="creditcard-card-bottom-info__value">06/21</p>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="cloud-card-content__weekly-limit">
-                      <div class="weekly-limit__progress-bar">
+                    <div class="cards-content__limit">
+                      <div class="cards-content-limit__progress-bar">
                         <svg fill="none" viewBox="0 0 322 10">
                           <rect x=".7" y=".4" width="320.4" height="9.5" rx="4.7" fill="#F1F1F1" />
                           <rect x=".7" y=".6" width="69.2" height="9.1" rx="4.5" fill="#197BBD" />
                         </svg>
                       </div>
-                      <div class="weekly-limit__description">
-                        <span class="weekly-limit-description__title">Weekly payment limit</span>
-                        <span class="weekly-limit-description__value">$350.60 / $4000</span>
+                      <div class="cards-content-limit__description">
+                        <span class="cards-content-limit-description__title">Weekly payment limit</span>
+                        <span class="cards-content-limit-description__value">$350.60 / $4000</span>
                       </div>
                     </div>
-                    <button class="card-prewiev__btn-left">
-                      <svg class="card-prewiev-left__img" fill="none" viewBox="0 0 13 23">
+                    <button class="cards-content__btn-left">
+                      <svg class="cards-container-left__img" fill="none" viewBox="0 0 13 23">
                         <path
                           d="m11.6 1.67-9.64 9.64 9.64 9.63"
                           stroke="#197BBD"
@@ -308,8 +303,8 @@
                         />
                       </svg>
                     </button>
-                    <button class="card-prewiev__btn-right">
-                      <svg class="card-prewiev-right__img" fill="none" viewBox="0 0 13 23">
+                    <button class="cards-content__btn-right">
+                      <svg class="cards-container-right__img" fill="none" viewBox="0 0 13 23">
                         <path
                           d="m1.5 1.67 9.63 9.64-9.64 9.63"
                           stroke="#197BBD"
@@ -320,27 +315,32 @@
                       </svg>
                     </button>
                   </div>
-                  <div class="cloud-card-content__card-balance">
-                    <div class="card-balance__item">
+                  <div class="cards-content__balance">
+                    <div class="cards-content-balance__item">
                       <span
-                        class="card-balance-item__value card-balance-item__value--blue card-balance-item__value--large"
-                        >$ 2850.75</span
+                        class="cards-content-balance-item__value cards-content-balance-item__value--blue cards-content-balance-item__value--large"
                       >
-                      <span class="card-balance-item__description">Current balance</span>
+                        $ 2850.75
+                      </span>
+                      <span class="cards-content-balance-item__description">Current balance</span>
                     </div>
-                    <div class="card-balance__item">
-                      <span class="card-balance-item__value card-balance-item__value--green">$ 1500.50</span>
-                      <span class="card-balance-item__description">income</span>
+                    <div class="cards-content-balance__item">
+                      <span class="cards-content-balance-item__value cards-content-balance-item__value--green">
+                        $ 1500.50
+                      </span>
+                      <span class="cards-content-balance-item__description">income</span>
                     </div>
-                    <div class="card-balance__item">
-                      <span class="card-balance-item__value card-balance-item__value--red">$ 350.60</span>
-                      <span class="card-balance-item__description">Outcome</span>
+                    <div class="cards-content-balance__item">
+                      <span class="cards-content-balance-item__value cards-content-balance-item__value--red">
+                        $ 350.60
+                      </span>
+                      <span class="cards-content-balance-item__description">Outcome</span>
                     </div>
-                    <div class="card-balance__item">
+                    <div class="cards-content-balance__item">
                       <input type="checkbox" id="card__checkbox" />
 
-                      <label class="card-balance-item__checkbox-label" for="card__checkbox"> </label>
-                      <span class="card-balance-item__description">Deactivate card</span>
+                      <label class="cards-content-balance-item__checkbox-label" for="card__checkbox"> </label>
+                      <span class="cards-content-balance-item__description">Deactivate card</span>
                     </div>
                   </div>
                 </div>
