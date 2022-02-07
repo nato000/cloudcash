@@ -1,0 +1,215 @@
+.cards__content {
+  display: flex;
+}
+
+.cards-content__card {
+  --width: 320px;
+  --height: 205px;
+  --size: 25px;
+  min-width: var(--width);
+  position: relative;
+  padding: 0 20px;
+}
+
+.cards-content__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 200px;
+  width: 1px;
+  background-color: rgba(var(--color-gray-light), 0.7);
+}
+
+.cards-container-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: var(--width);
+}
+
+.cards-container {
+  display: flex;
+  padding: 0 0 10px 0;
+}
+
+.cards-content__btn-left,
+.cards-content__btn-right {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  top: calc(var(--height) * 0.5);
+}
+
+.cards-content__btn-left .cards-container-left__img,
+.cards-content__btn-right .cards-container-right__img {
+  width: var(--size);
+  height: var(--size);
+  stroke: rgb(var(--color-blue-light));
+  transition: 0.3s ease-in-out;
+}
+
+.cards-content__btn-left path,
+.cards-content__btn-right path {
+  transition: 0.3s ease-in-out;
+}
+
+.cards-content__btn-left:hover path,
+.cards-content__btn-right:hover path {
+  stroke: rgb(var(--color-blue-dark));
+}
+
+.cards-content__btn-left {
+  left: 0px;
+  transform: translate(0%, -50%);
+}
+
+.cards-content__btn-right {
+  right: 0px;
+  transform: translate(0%, -50%);
+}
+
+.cards-content-limit__progress-bar,
+.cards-content-limit__description {
+  width: 100%;
+}
+
+.cards-content-limit__progress-bar {
+  margin-top: 20px;
+  min-height: 20px;
+}
+
+.cards-content-limit__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-content-limit-description__title {
+  font-family: var(--app-font-suprema);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(var(--color-gray));
+}
+
+.cards-content-limit-description__value {
+  font-family: var(--app-font-lato);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cards-content__balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  position: relative;
+}
+
+.cards-content-balance__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.cards-content-balance-item__value {
+  font-family: var(--app-font-lato);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.cards-content-balance-item__value--large {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.cards-content-balance-item__value--blue {
+  color: rgb(var(--color-blue-light));
+}
+
+.cards-content-balance-item__value--green {
+  color: rgb(var(--color-green));
+}
+
+.cards-content-balance-item__value--red {
+  color: rgb(var(--color-red));
+}
+
+.cards-content-balance-item__description {
+  font-family: var(--app-font-suprema);
+  color: rgb(var(--color-gray-light));
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.cards-content-balance-item__checkbox-label {
+  position: relative;
+  margin-bottom: 5px;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  background-color: rgba(var(--color-gray-light), 0.6);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#card__checkbox {
+  position: fixed;
+  transform: scale(0);
+}
+
+.cards-content-balance-item__checkbox-label::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(var(--color-gray-light));
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.cards-content-balance-item__checkbox-label:active::after {
+  box-shadow: 0 0 0 15px rgba(var(--color-blue-light), 0.2);
+}
+
+#card__checkbox:focus-visible + .cards-content-balance-item__checkbox-label::after {
+  box-shadow: 0 0 0 20px rgba(var(--color-blue-light), 0.2);
+}
+
+#card__checkbox:checked + .cards-content-balance-item__checkbox-label {
+  background-color: rgba(var(--color-blue-light), 0.5);
+}
+
+#card__checkbox:checked + .cards-content-balance-item__checkbox-label::after {
+  left: 100%;
+  transform: translateX(-100%);
+  background-color: rgb(var(--color-blue-light));
+}
+
+@media (max-width: 750px) {
+  .cards-content__card {
+    --width: 290px;
+    --height: 190px;
+  }
+
+  .creditcard-card {
+    max-height: var(--height);
+  }
+
+  .creditcard-card__bottom-info-wrapper {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards-content__balance {
+    justify-content: flex-end;
+  }
+
+  .cards-content-balance-item__value {
+    font-size: 20px;
+  }
+}

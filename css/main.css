@@ -12,11 +12,11 @@
 @import "./components/app/app-header.css";
 @import "./components/app/app-content.css";
 
-@import "./components/card/general-cards-style.css";
 @import "./components/card/card.css";
+@import "./components/card/cards.css";
 @import "./components/card/creditcard.css";
 @import "./components/card/history-card.css";
-@import "./components/card/goal-cards.css";
+@import "./components/card/goal-card.css";
 @import "./components/section/outcome-section.css";
 @import "./components/section/transaction-section.css";
 @import "./components/section/goal-section.css";
